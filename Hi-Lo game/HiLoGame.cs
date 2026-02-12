@@ -6,7 +6,7 @@ namespace Hi_Lo_game
 {
     static class HiLoGame     //all the members are static
     {
-        private const int MAXIMUM = 10;    //this is a constant and no one can change it
+        public const int MAXIMUM = 10;    //this is a constant and no one can change it
         private static int currentNumber = Random.Shared.Next(1, MAXIMUM + 1);
         private static int nextNumber = Random.Shared.Next(1, MAXIMUM + 1);
         private static int pot = 10;
