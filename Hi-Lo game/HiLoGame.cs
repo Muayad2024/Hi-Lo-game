@@ -4,13 +4,15 @@ using System.Text;
 
 namespace Hi_Lo_game
 {
-    static class HiLoGame     //all the members are static
+    static class HiLoGame     //all the members are static the fields and methods 
     {
         public const int MAXIMUM = 10;    //this is a constant and no one can change it
         private static int currentNumber = Random.Shared.Next(1, MAXIMUM + 1);
         private static int nextNumber = Random.Shared.Next(1, MAXIMUM + 1);
         private static int pot = 10;
 
+        //This is the method that can return the pot value to another class 
+        //even though the pot variable is private
         public static int GetPot() { return pot; }
 
         public static void Guess(bool higher)
