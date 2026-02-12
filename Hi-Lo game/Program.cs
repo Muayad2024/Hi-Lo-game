@@ -3,7 +3,6 @@
  * that generated randomly and if they are higher or lower 
  * and if his guess is true it will increase the pot by one mark 
  * and if the player give wrong answer the pot will decrease by one mark
- * This comment for testing git changes
  */
 Console.WriteLine("Welcome to HiLo.");
 Console.WriteLine($"Guess numbers between 1 and {HiLoGame.MAXIMUM}.");
